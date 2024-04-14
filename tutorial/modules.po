@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-01 20:27+0000\n"
-"PO-Revision-Date: 2024-03-01 21:11+0300\n"
+"PO-Revision-Date: 2024-04-10 21:30+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -240,8 +240,8 @@ msgid ""
 "with the ``__name__`` set to ``\"__main__\"``.  That means that by adding "
 "this code at the end of your module::"
 msgstr ""
-"modüldeki kod, içe aktardığınız gibi yürütülür, ancak ``__name__`` "
-"``\"__main__\"`` olarak ayarlanır. Bu, modülünüzün sonuna bu kodu ekleyerek:"
+"modüldeki kod, içe aktardığınız gibi yürütülür, ancak ``__name__`` ``"
+"\"__main__\"`` olarak ayarlanır. Bu, modülünüzün sonuna bu kodu ekleyerek:"
 
 #: tutorial/modules.rst:161
 msgid ""
@@ -444,7 +444,6 @@ msgid "Standard Modules"
 msgstr "Standart modüller"
 
 #: tutorial/modules.rst:269
-#, fuzzy
 msgid ""
 "Python comes with a library of standard modules, described in a separate "
 "document, the Python Library Reference (\"Library Reference\" hereafter).  "
@@ -458,7 +457,7 @@ msgid ""
 "into every Python interpreter.  The variables ``sys.ps1`` and ``sys.ps2`` "
 "define the strings used as primary and secondary prompts::"
 msgstr ""
-"Python, ayrı bir belge olan Python Kütüphane Referansında (bundan sonra "
+"Python, ayrı bir belge olan Python Kütüphane Referansında (buradan itibaren "
 "\"Kütüphane Referansı\") açıklanan standart modüllerden oluşan bir "
 "kütüphaneyle birlikte gelir.  Bazı modüller yorumlayıcıda yerleşik olarak "
 "bulunur; bunlar dilin çekirdeğinin bir parçası olmayan ancak yine de "
@@ -719,8 +718,8 @@ msgid ""
 "This would mean that ``from sound.effects import *`` would import the three "
 "named submodules of the :mod:`!sound.effects` package."
 msgstr ""
-"Yine, bu :mod:`!echo` alt modülünü yükler, ancak bu onun :func:`!echofilter` "
-"işlevini doğrudan kullanılabilir hale getirir::"
+"Bu, ``from sound.effects import *`` ifadesinin :mod:`!sound.effects` "
+"paketinin üç adlandırılmış alt modülünü içe aktaracağı anlamına gelir."
 
 #: tutorial/modules.rst:516
 msgid ""
@@ -809,7 +808,7 @@ msgstr ""
 "paketinde olduğu gibi), kardeş paketlerin alt modüllerine başvurmak için "
 "mutlak içe aktarımları kullanabilirsiniz.  Örneğin, :mod:`!sound.filters."
 "vocoder` modülünün :mod:`!sound.effects` paketindeki :mod:`!echo` modülünü "
-"kullanması gerekiyorsa, ``from sound.effects import echo`` kullanabilir.\v"
+"kullanması gerekiyorsa, ``from sound.effects import echo`` kullanabilir."
 
 #: tutorial/modules.rst:571
 msgid ""
@@ -886,16 +885,16 @@ msgstr "arama"
 
 #: tutorial/modules.rst:184
 msgid "path"
-msgstr ""
+msgstr "dizin"
 
 #: tutorial/modules.rst:267
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 #: tutorial/modules.rst:348
 msgid "builtins"
-msgstr ""
+msgstr "yerleşikler"
 
 #: tutorial/modules.rst:493
 msgid "__all__"
-msgstr ""
+msgstr "__all__"
