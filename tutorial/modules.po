@@ -885,16 +885,16 @@ msgstr "arama"
 
 #: tutorial/modules.rst:184
 msgid "path"
-msgstr ""
+msgstr "dizin"
 
 #: tutorial/modules.rst:267
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 #: tutorial/modules.rst:348
 msgid "builtins"
-msgstr ""
+msgstr "yerleşikler"
 
 #: tutorial/modules.rst:493
 msgid "__all__"
-msgstr ""
+msgstr "__all__"
