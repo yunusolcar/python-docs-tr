@@ -7,18 +7,18 @@ msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-01 20:27+0000\n"
-"PO-Revision-Date: 2023-11-26 17:49-0500\n"
+"PO-Revision-Date: 2024-04-15 00:06-0400\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: library/datetime.rst:2
 msgid ":mod:`datetime` --- Basic date and time types"
-msgstr ":mod:`datetime` --- Temel tarih ve zaman türleri"
+msgstr ":mod:`datetime` --- Temel tarih ve saat türleri"
 
 #: library/datetime.rst:11
 msgid "**Source code:** :source:`Lib/datetime.py`"
@@ -320,99 +320,111 @@ msgstr ""
 #: library/datetime.rst:183
 msgid "A :class:`.datetime` object *d* is aware if both of the following hold:"
 msgstr ""
+"Bir :class:`.datetime` nesnesi *d* aşağıdakilerin her ikisi de geçerliyse "
+"bilinçlidir:"
 
 #: library/datetime.rst:185
 msgid "``d.tzinfo`` is not ``None``"
-msgstr ""
+msgstr "``d.tzinfo``, ``None`` değildir"
 
 #: library/datetime.rst:186
 msgid "``d.tzinfo.utcoffset(d)`` does not return ``None``"
-msgstr ""
+msgstr "``d.tzinfo.utcoffset(d)``, ``None`` döndürmez"
 
 #: library/datetime.rst:188
 msgid "Otherwise, *d* is naive."
-msgstr ""
+msgstr "Aksi halde, *d* bilinçsizdir."
 
 #: library/datetime.rst:190
 msgid "A :class:`.time` object *t* is aware if both of the following hold:"
 msgstr ""
+"Bir :class:`.time` nesnesi *t* aşağıdakilerin her ikisi de geçerliyse "
+"bilinçlidir:"
 
 #: library/datetime.rst:192
 msgid "``t.tzinfo`` is not ``None``"
-msgstr ""
+msgstr "``t.tzinfo``, ``None`` değildir"
 
 #: library/datetime.rst:193
 msgid "``t.tzinfo.utcoffset(None)`` does not return ``None``."
-msgstr ""
+msgstr "``t.tzinfo.utcoffset(None)``, ``None`` döndürmez."
 
 #: library/datetime.rst:195
 msgid "Otherwise, *t* is naive."
-msgstr ""
+msgstr "Aksi takdirde, *t* bilinçsizdir."
 
 #: library/datetime.rst:197
 msgid ""
 "The distinction between aware and naive doesn't apply to :class:`timedelta` "
 "objects."
 msgstr ""
+"Bilinçli ve bilinçsiz nesneler arasındaki ayrım :class:`timedelta` nesneleri "
+"için geçerli değildir."
 
 #: library/datetime.rst:203
 msgid ":class:`timedelta` Objects"
-msgstr ""
+msgstr ":class:`timedelta` Nesneleri"
 
 #: library/datetime.rst:205
-#, fuzzy
 msgid ""
 "A :class:`timedelta` object represents a duration, the difference between "
 "two :class:`.datetime` or :class:`date` instances."
 msgstr ""
-"İki :class:`date`, :class:`.time` veya :class:`.datetime` örneği arasındaki "
-"farkı mikrosaniye çözünürlüğünde ifade eden bir süre."
+"Bir :class:`timedelta` nesnesi, iki :class:`.datetime` veya :class:`date` "
+"örneği arasındaki fark olan bir süreyi temsil eder."
 
 #: library/datetime.rst:210
 msgid ""
 "All arguments are optional and default to ``0``. Arguments may be integers "
 "or floats, and may be positive or negative."
 msgstr ""
+"Tüm argümanlar isteğe bağlıdır ve varsayılan değer ``0``'dır. Bağımsız "
+"değişkenler tamsayı veya ondalıklı sayı olabilir ve pozitif veya negatif "
+"olabilir."
 
 #: library/datetime.rst:213
 msgid ""
 "Only *days*, *seconds* and *microseconds* are stored internally. Arguments "
 "are converted to those units:"
 msgstr ""
+"Yalnızca *gün*, *saniye* ve *mikrosaniye* dahili olarak saklanır. Argümanlar "
+"bu birimlere dönüştürülür:"
 
 #: library/datetime.rst:216
 msgid "A millisecond is converted to 1000 microseconds."
-msgstr ""
+msgstr "Bir milisaniye 1000 mikrosaniyeye dönüştürülür."
 
 #: library/datetime.rst:217
 msgid "A minute is converted to 60 seconds."
-msgstr ""
+msgstr "Bir dakika 60 saniyeye dönüştürülür."
 
 #: library/datetime.rst:218
 msgid "An hour is converted to 3600 seconds."
-msgstr ""
+msgstr "Bir saat 3600 saniyeye dönüştürülür."
 
 #: library/datetime.rst:219
 msgid "A week is converted to 7 days."
-msgstr ""
+msgstr "Bir hafta 7 güne dönüştürülür."
 
 #: library/datetime.rst:221
 msgid ""
 "and days, seconds and microseconds are then normalized so that the "
 "representation is unique, with"
 msgstr ""
+"ve günler, saniyeler ve mikrosaniyeler daha sonra gösterimin benzersiz "
+"olması için aşağıdaki şekilde normalleştirilir."
 
 #: library/datetime.rst:224
 msgid "``0 <= microseconds < 1000000``"
-msgstr ""
+msgstr "``0 <= mikrosaniye < 1000000``"
 
 #: library/datetime.rst:225
 msgid "``0 <= seconds < 3600*24`` (the number of seconds in one day)"
-msgstr ""
+msgstr "``0 <= saniye < 3600*24`` (bir gündeki saniye sayısı)"
 
 #: library/datetime.rst:226
 msgid "``-999999999 <= days <= 999999999``"
-msgstr ""
+msgstr "``-999999999 <= gün <= 999999999``"
 
 #: library/datetime.rst:228
 msgid ""
@@ -420,6 +432,9 @@ msgid ""
 "*seconds* and *microseconds* are \"merged\" and normalized into those three "
 "resulting attributes::"
 msgstr ""
+"Aşağıdaki örnekte *gün*, *saniye* ve *mikrosaniye* dışındaki tüm "
+"argümanların nasıl \"birleştirildiği\" ve sonuçta ortaya çıkan bu üç "
+"özelliğe normalleştirildiği gösterilmektedir::"
 
 #: library/datetime.rst:246
 msgid ""
@@ -429,112 +444,133 @@ msgid ""
 "tiebreaker. If no argument is a float, the conversion and normalization "
 "processes are exact (no information is lost)."
 msgstr ""
+"Herhangi bir bağımsız değişken bir ondalıklı sayı ise ve kesirli "
+"mikrosaniyeler varsa, tüm argümanlardan kalan kesirli mikrosaniyeler "
+"birleştirilir ve toplamları, yuvarlak-yarım-çift eşitlik bozucu kullanılarak "
+"en yakın mikrosaniyeye yuvarlanır. Hiçbir argüman ondalıklı değilse, "
+"dönüştürme ve normalleştirme işlemleri tam olarak yapılır (hiçbir bilgi "
+"kaybı olmaz)."
 
 #: library/datetime.rst:253
 msgid ""
 "If the normalized value of days lies outside the indicated range, :exc:"
 "`OverflowError` is raised."
 msgstr ""
+"Günlerin normalleştirilmiş değeri belirtilen aralığın dışında kalıyorsa, :"
+"exc:`OverflowError` ortaya çıkar."
 
 #: library/datetime.rst:256
 msgid ""
 "Note that normalization of negative values may be surprising at first. For "
 "example::"
 msgstr ""
+"Negatif değerlerin normalleştirilmesinin ilk başta şaşırtıcı olabileceğini "
+"unutmayın. Örneğin::"
 
 #: library/datetime.rst:546 library/datetime.rst:1696 library/datetime.rst:2298
 msgid "Class attributes:"
-msgstr ""
+msgstr "Sınıf özellikleri:"
 
 #: library/datetime.rst:269
 msgid "The most negative :class:`timedelta` object, ``timedelta(-999999999)``."
-msgstr ""
+msgstr "En düşük :class:`timedelta` nesnesi, ``timedelta(-999999999)``."
 
 #: library/datetime.rst:274
 msgid ""
 "The most positive :class:`timedelta` object, ``timedelta(days=999999999, "
 "hours=23, minutes=59, seconds=59, microseconds=999999)``."
 msgstr ""
+"En yüksek :class:`timedelta` nesnesi, ``timedelta(days=999999999, hours=23, "
+"minutes=59, seconds=59, microseconds=999999)``."
 
 #: library/datetime.rst:280
 msgid ""
 "The smallest possible difference between non-equal :class:`timedelta` "
 "objects, ``timedelta(microseconds=1)``."
 msgstr ""
+"Eşit olmayan :class:`timedelta` nesneleri arasındaki mümkün olan en küçük "
+"fark, ``timedelta(microseconds=1)``."
 
 #: library/datetime.rst:283
 msgid ""
 "Note that, because of normalization, ``timedelta.max`` > ``-timedelta.min``. "
 "``-timedelta.max`` is not representable as a :class:`timedelta` object."
 msgstr ""
+"Normalleştirme nedeniyle ``timedelta.max`` > ``-timedelta.min`` olduğuna "
+"dikkat edin. ``-timedelta.max`` bir :class:`timedelta` nesnesi olarak temsil "
+"edilemez."
 
 #: library/datetime.rst:564 library/datetime.rst:1716
 msgid "Instance attributes (read-only):"
-msgstr ""
+msgstr "Örnek özellikleri (salt okunur):"
 
 #: library/datetime.rst:289
 msgid "Attribute"
-msgstr ""
+msgstr "Özellik"
 
 #: library/datetime.rst:289
 msgid "Value"
-msgstr ""
+msgstr "Değer"
 
 #: library/datetime.rst:291
 msgid "``days``"
-msgstr ""
+msgstr "``days``"
 
 #: library/datetime.rst:291
 msgid "Between -999999999 and 999999999 inclusive"
-msgstr ""
+msgstr "999999999 ile -999999999 dahil arasında"
 
 #: library/datetime.rst:293
 msgid "``seconds``"
-msgstr ""
+msgstr "``seconds``"
 
 #: library/datetime.rst:293
 msgid "Between 0 and 86399 inclusive"
-msgstr ""
+msgstr "0 ile 86399 dahil arasında"
 
 #: library/datetime.rst:295
 msgid "``microseconds``"
-msgstr ""
+msgstr "``microseconds``"
 
 #: library/datetime.rst:295
 msgid "Between 0 and 999999 inclusive"
-msgstr ""
+msgstr "0 ile 999999 dahil arasında"
 
 #: library/datetime.rst:581 library/datetime.rst:1138
 msgid "Supported operations:"
-msgstr ""
+msgstr "Desteklenen operasyonlar:"
 
 #: library/datetime.rst:584 library/datetime.rst:1141
 msgid "Operation"
-msgstr ""
+msgstr "Operasyon"
 
 #: library/datetime.rst:584 library/datetime.rst:1141
 msgid "Result"
-msgstr ""
+msgstr "Sonuç"
 
 #: library/datetime.rst:305
 msgid "``t1 = t2 + t3``"
-msgstr ""
+msgstr "``t1 = t2 + t3``"
 
 #: library/datetime.rst:305
 msgid ""
 "Sum of *t2* and *t3*. Afterwards *t1*-*t2* == *t3* and *t1*-*t3* == *t2* are "
 "true. (1)"
 msgstr ""
+"*t2* ve *t3* 'ün toplamıdır. Daha sonra *t1*-*t2* == *t3* ve *t1*-*t3* == "
+"*t2* doğrudur. (1)"
 
 #: library/datetime.rst:308
 msgid "``t1 = t2 - t3``"
-msgstr ""
+msgstr "``t1 = t2 - t3``"
 
 #: library/datetime.rst:308
 msgid ""
 "Difference of *t2* and *t3*. Afterwards *t1* == *t2* - *t3* and *t2* == *t1* "
 "+ *t3* are true. (1)(6)"
 msgstr ""
+"*t2* ve *t3* 'ün farkı. Daha sonra *t1* == *t2* - *t3* ve *t2* == *t1* + "
+"*t3* doğrudur. (1)(6)"
 
 #: library/datetime.rst:312
 msgid "``t1 = t2 * i or t1 = i * t2``"
